@@ -8,7 +8,9 @@ As of 2021-05-31 this package has only been tested with Microsoft SQL Server uti
 ### Instructions
 
 Install the package using `pip install sqlrecorder`
+<br>
 In your application, `from sqlrecorder import SQLRecorderWrapper`
+<br>
 Set up your config variables:
 
 ```
@@ -21,18 +23,18 @@ SQLoggerOne.config['CONNECTION_STRING'] = 'mssql+pyodbc://@DESKTOP-8TLT5OK\\SQLE
 # table name which the logs are written to
 SQLoggerOne.config['TABLE_NAME'] = 'py_errorlog'
 ```
-Config:
-###`ON_FAIL`
-`str: 'pass'`, passes when the wrapped function throws an error
-`str: 'return'`, returns the function and associated args and kwargs when the wrapped function throws an error
-`str: 'exit'`, returns sys.exit when the wrapped function throws an error
+### Config:
+`ON_FAIL`<br>
+`str: 'pass'`, passes when the wrapped function throws an error<br>
+`str: 'return'`, returns the function and associated args and kwargs when the wrapped function throws an error<br>
+`str: 'exit'`, returns sys.exit when the wrapped function throws an error<br>
 
-###`CONNECTION_STRING`
-`str` The connection string used to connect with the database instance.
-More on this in the [SQL Alchemy documentation](https://docs.sqlalchemy.org/en/14/core/engines.html)
+`CONNECTION_STRING`<br>
+`str` The connection string used to connect with the database instance.<br>
+More on this in the [SQL Alchemy documentation](https://docs.sqlalchemy.org/en/14/core/engines.html)<br>
 
-###`TABLE_NAME`
-`str` The table name to be created in SQL.
+`TABLE_NAME`<br>
+`str` The table name to be created in SQL.<br>
 
 ### Sample Success
 
