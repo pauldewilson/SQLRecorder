@@ -27,11 +27,10 @@ SQLoggerOne.config['TABLE_NAME'] = 'py_errorlog'
 `ON_FAIL`<br>
 `str: 'pass'`, passes when the wrapped function throws an error<br>
 `str: 'return'`, returns the function and associated args and kwargs when the wrapped function throws an error<br>
-`str: 'exit'`, returns sys.exit when the wrapped function throws an error<br>
+`str: 'exit'`, returns `sys.exit` when the wrapped function throws an error<br>
 
 `CONNECTION_STRING`<br>
-`str` The connection string used to connect with the database instance.<br>
-More on this in the [SQL Alchemy documentation](https://docs.sqlalchemy.org/en/14/core/engines.html)<br>
+`str` The connection string used to connect with the database instance. See: [SQL Alchemy documentation](https://docs.sqlalchemy.org/en/14/core/engines.html)<br>
 
 `TABLE_NAME`<br>
 `str` The table name to be created in SQL.<br>
